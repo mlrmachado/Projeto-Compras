@@ -1,3 +1,5 @@
+import model.Solicitacao;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -57,9 +59,14 @@ public class Main {
             list.add(row);
         }
 
-        return list;
-    }
+        Solicitacao solicitacao = new Solicitacao();
+        solicitacao.setCdEstoque(1);
+        solicitacao.getCdEstoque();
 
+
+        return list;
+
+    }
 
 }
 
