@@ -5,7 +5,7 @@ import types.SituacaoSolicitacao;
 import java.util.Date;
 
 public class Solicitacao {
-    private long nrSequencia;
+    private long nrSolicitacao;
     private String solicitanteSolicitacao;
     private long cdMaterial;
     private long nrQuantidade;
