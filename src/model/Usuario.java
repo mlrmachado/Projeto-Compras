@@ -5,11 +5,9 @@ import java.util.Date;
 public class Usuario {
 
     private long nrSequencia;
-    private String dsNome;
-    private Date dtNascimento;
-    private String cpf;
     private String dsUsuario;
     private String senha;
+    private long cdPessoaFisica;
 
     public Usuario() {
 
@@ -21,30 +19,6 @@ public class Usuario {
 
     public void setNrSequencia(long nrSequencia) {
         this.nrSequencia = nrSequencia;
-    }
-
-    public String getDsNome() {
-        return dsNome;
-    }
-
-    public void setDsNome(String dsNome) {
-        this.dsNome = dsNome;
-    }
-
-    public Date getDtNascimento() {
-        return dtNascimento;
-    }
-
-    public void setDtNascimento(Date dtNascimento) {
-        this.dtNascimento = dtNascimento;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 
     public String getDsUsuario() {
@@ -61,6 +35,14 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public long getCdPessoaFisica() {
+        return cdPessoaFisica;
+    }
+
+    public void setCdPessoaFisica(long cdPessoaFisica) {
+        this.cdPessoaFisica = cdPessoaFisica;
     }
 }
 

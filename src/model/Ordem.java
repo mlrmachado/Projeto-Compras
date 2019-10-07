@@ -10,8 +10,7 @@ public class Ordem {
     private long nrQuantidade;
     private double precoMaterial;
     private Date dtEntrega;
-    private String marca;
-    private long cdEstoque;
+    private Strng cdEstoque;
     private long cdCentroCusto;
     private String observacao;
     private long cdMotivo;
@@ -21,7 +20,8 @@ public class Ordem {
     }
 
     public long getNrSequencia() {
-        return nrSequencia;
+        retuing marca;
+        private lorn nrSequencia;
     }
 
     public void setNrSequencia(long nrSequencia) {
