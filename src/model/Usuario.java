@@ -8,6 +8,7 @@ public class Usuario {
     private String dsUsuario;
     private String senha;
     private long cdPessoaFisica;
+    private long setor;
 
     public Usuario() {
 
@@ -43,6 +44,14 @@ public class Usuario {
 
     public void setCdPessoaFisica(long cdPessoaFisica) {
         this.cdPessoaFisica = cdPessoaFisica;
+    }
+
+    public long getSetor() {
+        return setor;
+    }
+
+    public void setSetor(long setor) {
+        this.setor = setor;
     }
 }
 

@@ -4,6 +4,7 @@ public class Material {
 
     private long nrSequencia;
     private String dsMaterial;
+    private long cdMarca;
 
     public Material() {
 
@@ -23,5 +24,13 @@ public class Material {
 
     public void setDsMaterial(String dsMaterial) {
         this.dsMaterial = dsMaterial;
+    }
+
+    public long getCdMarca() {
+        return cdMarca;
+    }
+
+    public void setcdMarcas(long marcas) {
+        this.cdMarca = marcas;
     }
 }

@@ -10,7 +10,8 @@ public class Ordem {
     private long nrQuantidade;
     private double precoMaterial;
     private Date dtEntrega;
-    private Strng cdEstoque;
+    private long marca;
+    private String cdEstoque;
     private long cdCentroCusto;
     private String observacao;
     private long cdMotivo;
@@ -20,8 +21,7 @@ public class Ordem {
     }
 
     public long getNrSequencia() {
-        retuing marca;
-        private lorn nrSequencia;
+        return nrSequencia;
     }
 
     public void setNrSequencia(long nrSequencia) {
@@ -76,19 +76,19 @@ public class Ordem {
         this.dtEntrega = dtEntrega;
     }
 
-    public String getMarca() {
+    public long getMarca() {
         return marca;
     }
 
-    public void setMarca(String marca) {
+    public void setMarca(long marca) {
         this.marca = marca;
     }
 
-    public long getCdEstoque() {
+    public String getCdEstoque() {
         return cdEstoque;
     }
 
-    public void setCdEstoque(long cdEstoque) {
+    public void setCdEstoque(String cdEstoque) {
         this.cdEstoque = cdEstoque;
     }
 
