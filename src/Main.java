@@ -1,3 +1,4 @@
+import conexao.Conexao;
 import model.Solicitacao;
 
 import java.sql.*;
@@ -9,17 +10,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Bem vindo");
         try {
-            String driver = "oracle.jdbc.OracleDriver";
-            String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-            String user = "buysystem";
-            String senha = "admin";
 
-            Class.forName(driver);
-            System.out.println("Driver carregado");
+            Conexao.Conectar();
 
-            Connection conn = DriverManager.getConnection(url, user, senha);
-
-            Statement stmt = conn.createStatement();
+            Statement stmt = Conexao.conn.createStatement();
 
             String sql = "SELECT NR_SEQUENCIA, NM_ITEM FROM ITEM ";
 
@@ -58,11 +52,6 @@ public class Main {
             }
             list.add(row);
         }
-
-        Solicitacao solicitacao = new Solicitacao();
-        solicitacao.setCdEstoque(1);
-        solicitacao.getCdEstoque();
-
 
         return list;
 
