@@ -4,7 +4,7 @@ public class LocalEstoque {
 
     private long nrSequencia;
     private String dsLocalEstoque;
-    private long CentroCusto;
+    private long cdCentroCusto;
 
     public LocalEstoque() {
 
@@ -26,11 +26,11 @@ public class LocalEstoque {
         this.dsLocalEstoque = dsLocalEstoque;
     }
 
-    public long getCentroCusto() {
-        return CentroCusto;
+    public long getCdCentroCusto() {
+        return cdCentroCusto;
     }
 
-    public void setCentroCusto(long centroCusto) {
-        CentroCusto = centroCusto;
+    public void setcdCentroCusto(long cdcentroCusto) {
+        cdCentroCusto = cdcentroCusto;
     }
 }
