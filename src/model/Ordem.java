@@ -10,7 +10,7 @@ public class Ordem {
     private long nrQuantidade;
     private double precoMaterial;
     private Date dtEntrega;
-    private long marca;
+    private long cdMarca;
     private String cdEstoque;
     private long cdCentroCusto;
     private String observacao;
@@ -76,12 +76,12 @@ public class Ordem {
         this.dtEntrega = dtEntrega;
     }
 
-    public long getMarca() {
-        return marca;
+    public long getCdMarca() {
+        return cdMarca;
     }
 
-    public void setMarca(long marca) {
-        this.marca = marca;
+    public void setNrMarca(long nrMarca) {
+        this.cdMarca = cdMarca;
     }
 
     public String getCdEstoque() {
