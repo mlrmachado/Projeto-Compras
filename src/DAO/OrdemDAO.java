@@ -3,6 +3,7 @@ package DAO;
 import conexao.Conexao;
 import model.Ordem;
 
+import java.sql.Date;
 import java.sql.PreparedStatement;
 
 public class OrdemDAO {
@@ -28,9 +29,9 @@ public class OrdemDAO {
         pst.setLong(4, ordem.getCdMaterial());
         pst.setLong(5, ordem.getNrQuantidade());
         pst.setDouble(6, ordem.getPrecoMaterial());
-        pst.setDate(7, ordem.setDtEntrega(););
+        pst.setDate(7, (Date) ordem.getDtEntrega());
         pst.setLong(8, ordem.getCdMarca());
-        pst.setLong(9, ordem.getCdEstoque());
+        pst.setString(9, ordem.getCdEstoque());
         pst.setLong(10, ordem.getCdCentroCusto());
         pst.setString(11, ordem.getObservacao());
         pst.setLong(12, ordem.getCdMotivo());
