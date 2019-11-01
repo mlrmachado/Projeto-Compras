@@ -1,5 +1,7 @@
 package model;
 
+import DAO.CentroCustoDAO;
+
 public class CentroCusto {
 
     private long nrSequencia;
@@ -23,5 +25,12 @@ public class CentroCusto {
 
     public void setDsCentroCusto(String dsCentroCusto) {
         this.dsCentroCusto = dsCentroCusto;
+    }
+
+    public void salvar () throws Exception {
+        CentroCustoDAO centroCustoDAO = new CentroCustoDAO();
+        centroCustoDAO.salvar(this);
+
+
     }
 }

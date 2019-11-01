@@ -1,4 +1,6 @@
+import DAO.CentroCustoDAO;
 import conexao.Conexao;
+import model.CentroCusto;
 import model.Solicitacao;
 
 import java.sql.*;
@@ -26,6 +28,11 @@ public class Main {
             String nmItem;
 
             res.getMetaData();
+
+            CentroCusto centroCusto = new CentroCusto();
+            centroCusto.setNrSequencia(1);
+            centroCusto.setDsCentroCusto("Compras");
+            centroCusto.salvar();
 
             List list = retornaBancoAsList(res);
             while (res.next()) {
