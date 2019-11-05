@@ -29,9 +29,12 @@ public class Main {
 
             res.getMetaData();
 
+            CentroCustoDAO centroCustoDAO = new CentroCustoDAO();
+           // centroCustoDAO.createTable();
+
             CentroCusto centroCusto = new CentroCusto();
             centroCusto.setNrSequencia(1);
-            centroCusto.setDsCentroCusto("Compras");
+            centroCusto.setDsCentroCusto("bicho");
             centroCusto.salvar();
 
             List list = retornaBancoAsList(res);

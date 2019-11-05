@@ -1,12 +1,12 @@
 package types;
 
 public enum SituacaoSolicitacao {
-    LIBERADA("Lib");
-    ENVIADO_COTACAO("EC");
+    LIBERADA("Lib"),
+    ENVIADO_COTACAO("EC"),
     ORDEM_COMPRA_REALIZDA("OR");
 
     private final String valor;
-    TiposDeFrete (String valorOpcao){
+    SituacaoSolicitacao (String valorOpcao){
         valor = valorOpcao;
     }
 
